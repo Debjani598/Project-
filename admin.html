@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <style>
+           body {
+           
+            background-color: #f0f0f0;
+        }
+            input[type="submit"] {
+            width: 50%;
+            padding: 10px;
+            background-color: #03346E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+         input[type="submit"]:hover {
+            background-color: #0253A2;
+        }
+        div{
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+   </style>
+</head>
+<body align=center>
+ <div>
+ <h2 style=" color:#03346E;">Admin Panel</h2><br>
+ <form action="admin.jsp" method="post">
+        <input type="submit" name="action" value="ADD"><br><br>
+        <input type="submit" name="action" value="VIEW"><br><br>
+        <input type="submit" name="action" value="DELETE">
+    </form>
+</div>
+</body>
+</html>

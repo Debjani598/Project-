@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+.c{
+	width:500px;
+	padding:20px;
+	margin:0 auto;
+	background-color:#D1E9F6;
+	height: 100vh; 
+}
+
+
+h1 {
+    color: #333;
+    
+}
+
+
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle black shadow */
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+ padding:5px;
+	width:100%;
+   
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    cursor:pointer;
+    color:white;
+     border-radius: 5px; /* Optional: Add rounded corners */
+    border: none; /* Remove any border */
+     font-size: 16px; /* Increase font size */
+}
+
+input[type="submit"]:hover {
+    background-color:blue;
+}

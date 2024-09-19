@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+     body {
+           
+            background-color: #f0f0f0;
+        }
+            button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #03346E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+         button[type="submit"]:hover {
+            background-color: #0253A2;
+        }
+        .contain{
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+</style>
+</head>
+ 
+<body align=center>
+
+<div class="contain">
+     <h2 style=" color:#03346E;">New User</h2>
+    <form action="newuser.jsp" method="POST">
+        <label for="uname">Username</label><br>
+        <input type="text"  name="uname" placeholder="Enter Username" required maxlength="10"><br>
+        
+        <label for="pass">Password</label><br>
+        <input type="password"  name="pass" placeholder="Enter Password" required maxlength="10"><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" name="email" placeholder="Enter Email" required maxlength="20"><br>
+        
+        <label for="phno">Phone Number</label><br>
+        <input type="tel"  name="phno" placeholder="Enter Phone Number" required maxlength="10"><br><br>
+        
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>

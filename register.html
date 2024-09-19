@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+input[type="submit"] {
+    background-color: #28a745;
+    cursor:pointer;
+    color:white;
+     border-radius: 5px; /* Optional: Add rounded corners */
+    border: none; /* Remove any border */
+     font-size: 16px; /* Increase font size */
+}
+input[type="submit"]:hover {
+    background-color:blue;
+}
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle black shadow */
+}
+.c{
+	width:500px;
+	padding:20px;
+	margin:0 auto;
+	background-color:#D1E9F6;;
+	height: 100vh; 
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+ padding:5px;
+	width:100%;
+   
+}
+table{
+   border: 4px solid #D1E9F6; /* Increase border thickness */
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.2); /* Adds a subtle glow */
+    background-color: white;}
+  td {
+            border: 1px solid #D1E9F6;
+            padding: 8px;
+            text-align: left;
+        }
+</style>
+</head>
+<body align=center >
+
+ <!-- Registration Form -->
+        <div class=c>
+            <h2 style=" color:#03346E;">Register</h2>
+            <form action="register.jsp" method="post">
+                Full Name:<br>
+                <input type="text" name="n" required><br>
+                
+                Email:<br>
+                <input type="email" name="e" required><br>
+                
+                Password:<br>
+                <input type="password" name="p" required><br>
+                
+                <br>
+               <table>
+               <caption ><b>Choose Event</b></caption>
+<tr><td>Hackathon</td><td><input type=checkbox value=hackathon name=s></td></tr>
+<tr><td>Code Battle</td><td><input type=checkbox value=codebattle name=s></td></tr>
+<tr><td>Tech Quiz</td><td><input type=checkbox value=quiz name=s></td></tr>
+<tr><td>Typo Master</td><td><input type=checkbox value=tmaster name=s></td></tr>
+<tr><td>Web Design Contest</td><td><input type=checkbox value=wd name=s></td></tr>
+<tr><td>Bug Hunt</td><td><input type=checkbox value=bughunt name=s></td></tr>
+<tr><td>Tech Meme War</td><td><input type=checkbox value=emwar name=s></td></tr>
+                </table> 
+               <br><br> <br><br>
+                
+                <input type="submit" value="Register">
+            </form>
+        </div>
+</body>
+</html>
